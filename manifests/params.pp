@@ -123,6 +123,7 @@ class rsyslog::params {
           '#$ModLoad immark  # provides --MARK-- message capability',
         ]
         $omit_local_logging             = true
+        $im_journal_statefile           = 'imjournal.state'
         $im_journal_ratelimit_interval  = '600'
         $im_journal_ratelimit_burst     = '20000'
       } else {

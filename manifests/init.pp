@@ -49,6 +49,7 @@ class rsyslog (
   $msg_reduction                  = $rsyslog::params::msg_reduction,
   $non_kernel_facility            = $rsyslog::params::non_kernel_facility,
   $omit_local_logging             = $rsyslog::params::omit_local_logging,
+  $im_journal_statefile           = $rsyslog::params::im_journal_statefile,
   $im_journal_ratelimit_interval  = $rsyslog::params::im_journal_ratelimit_interval,
   $im_journal_ratelimit_burst     = $rsyslog::params::im_journal_ratelimit_burst
 ) inherits rsyslog::params {
